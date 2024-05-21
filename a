@@ -1,0 +1,68 @@
+Sudo su nojha
+gcloud auth login
+gcloud compute ssh --project cf-metrocf-fls-p9 fls-ssh-host --tunnel-through-iap --zone europe-west1-d
+ls
+cd metrocf-on-prem-connectivity
+ls
+cd envs/prod/spokes/configs/
+ls
+ 
+cd cf-on-prem-q-audit.json
+cat cf-on-prem-q-audit.json
+git branch
+git pull
+git branch      SDCORP-756332
+git branch
+git checkout    SDCORP-756332
+cat cf-on-prem-mde
+ls
+cat cf-on-prem-mde.json
+ls
+vi cf-on-prem-q-audit.json
+vi cf-on-prem-q-audit.json
+pre-commit run -a
+git diff
+git status
+git add  cf-on-prem-q-audit.json
+git status
+git commit -m "SDCORP-928288: Added new service project"
+git push --set-upstream origin SDCORP-928288
+gh pr create
+Delete Branch (git branch -d <branch>
+ 
+ 
+git commit --amend --no-edit
+git push origin SDCORP-924156 --force
+git branch --delete <branchname>
+ 
+grep -ir serverless
+grep -ir -A15 serverless_vpc_access (VPC)
+grep -ir -A15 Private_service_access (PSA)
+grep -ir -A15 private_service_connect (PSC)
+grep -ir -A15 VPN  (VPN)
+
+
+
+ 
+(Reminder:before implementation create branch)
+ 
+list 
+map 
+dictionary 
+tupple
+ 
+ls -la (find duplicate file SWP file delete)
+rm -rf (Delete Command(
+
+gcloud config set auth/disable_ssl_validation  True
+
+Open CMD and type: - dsregcmd /status
+Full information on your laptop 
+
+firewall (host project)
+
+gcloud compute scp nilesh_ojha_metroitpartner_com@fls-ssh-host/home/nilesh_ojha_metroitpartner_com/test --tunnel-through-iap --zone europe-west1-d
+
+
+
+
